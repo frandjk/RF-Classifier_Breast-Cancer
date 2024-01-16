@@ -1,1 +1,1 @@
-# Random Forest CLassifier
+# Random Forest Classifier
