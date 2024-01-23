@@ -20,7 +20,7 @@ df['diagnosis'].value_counts()
 df.isnull().sum()
 
 # Declare feature vector and target variable
-X = df.drop(['diagnosis'], axis = 1)
+X = df.drop(['diagnosis '], axis = 1)
 Y = df['diagnosis']
 
 from sklearn.model_selection import train_test_split
