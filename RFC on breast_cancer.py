@@ -6,6 +6,7 @@ import seaborn as sns
 df = pd.read_csv('breast_cancer.csv')
 df
 
+
 df.shape
 df.head(10)
 columns = df.columns
@@ -45,7 +46,6 @@ rfc_100.fit(X_train, Y_train)
 Y_pred_100 = rfc_100.predict(X_test)
 print('Model accuracy score with 100 decision-trees : {0:0.4f}'. format(accuracy_score(Y_test, Y_pred_100)))
 
-
 clf = RandomForestClassifier(n_estimators = 100, random_state = 0)
 clf.fit(X_train, Y_train)
 RandomForestClassifier(bootstrap = True, class_weight = None, criterion = 'gini',
@@ -66,6 +66,4 @@ plt.xlabel('Feature Importance Score')
 plt.ylabel('Features')
 plt.title('Visualizing Important Features')
 plt.show()
-
-
 
